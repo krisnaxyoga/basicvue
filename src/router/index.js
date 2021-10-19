@@ -7,6 +7,21 @@ const routes = [
         component: () => import("../views/transaction/Index.vue")
     },
     {
+        path: '/login',
+        name: 'login',
+        component: () => import("../views/Login.vue")
+    },
+    {
+        path: '/dashboard',
+        name: 'dashboard',
+        component: () => import("../views/Dashboard.vue")
+    },
+    {
+        path: '/register',
+        name: 'register',
+        component: () => import("../views/Register.vue")
+    },
+    {
         path: '/edit/:id',
         name: 'transaction.edit',
         component: () => import("../views/transaction/Edit.vue")
